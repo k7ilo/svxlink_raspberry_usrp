@@ -143,17 +143,18 @@ echo -e `date` "${YELLOW} Compiling ${NORMAL}"
 
 
 echo -e `date` "${RED}Installation of SVXLink is complete\n${NORMAL}"
-echo -e `date` "${GREEN} Now for DVSwitch\n\n\n${NORMAL}"
+#echo -e `date` "${GREEN} Now for DVSwitch\n\n\n${NORMAL}"
 echo
+echo -e `date` "${GREEN} REBOOTING\n\n\n${NORMAL}"
 sleep 10
-cd 
-sudo wget http://dvswitch.org/buster
-sudo chmod +x buster
-sudo ./buster
-sudo apt update -y && sudo apt upgrade
-sudo apt install dvswitch-server -y
-#sudo systemctl disable lighttpd
-#sudo reboot
+#cd 
+#sudo wget http://dvswitch.org/buster
+#sudo chmod +x buster
+#sudo ./buster
+#sudo apt update -y && sudo apt upgrade
+#sudo apt install dvswitch-server -y
+##sudo systemctl disable lighttpd
+sudo reboot
 
 
 	
